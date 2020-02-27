@@ -1,0 +1,99 @@
+29
+
+
+EXTRA
+------------------------------------
+- Mirar todos los notebooks que he hecho en Coursera
+
+DOCUMENTACION
+--------------------------------
+
+- usar latex
+- meter referencias externas y a los notebooks
+- por supuesto meter algun meme en los notebooks
+- Instrucciones y readme
+
+COMPUTING
+-----------------------------------------
+- GPU del portatil DONE(cuda instalado) 
+- Google Cloud new account 300$ free
+(por si hiciera falta mucha capacidad para entrenar algo)
+DONE vcf.free.gcp.1@gmail.com
+
+PROBLEM STATEMENT
+------------------------------------
+- que les interesa?
+- tipo problema
+- objetivo
+
+DOMAIN KNOWLEDGE
+--------------------------------
+- mooc copernicus eu
+- imagenes de sentinel
+- ¿Como han extraido los datos de las imagenes?
+- Outliers que sean fallos suyos?
+- Catastro
+
+DATA FORMAT
+-------------------------------
+- data leakages
+- ID CATASTROdatos 
+- como han partido train y test (tiempo, localizacion, %y)
+- esta y balanceado? y en test?
+- ver distribuciones de cada feature y ver la diff entre train y test
+(si las distribuciones son diferentes, asemejar en CV) (squewed data)
+- usar external sources?
+- RF para primera vista importancia features
+- Probar modelos de autoML Cloud y local, por curiosidad y ver como vamos mejorando
+(Google autoML, AWS SageMaker, AutoKeras, H2O...) (Catboost distingue categoricas directamente)
+- Downcast dtypes
+- Hold out y K-folds para train y CV (validation technique(Stratified,random...))
+
+EDA
+---------------------------------
+- tSNE
+- Covariance and correlations
+- PSA o SVM
+
+FEATURE ENGINEERING
+----------------------------------
+- PRE
+    - Regularizacion
+    - categoricas(One hot encoding, labeling, target...)
+    - numerical(outliers, binning)
+- interactions(unsupervised techniques?)
+    - Diffs, medias, varianza...
+- Geometria
+    - Num vertices
+    - Superficie m2
+    - Angulos
+    - Forma discreta
+- Posicionamiento
+    - Edificios alrededor
+    - Api externa geo posicionamiento
+	
+
+MODELOS
+-----------------------------------
+- Crear excel y guardar todos los modelos y ac
+- Linear (and non linear) SVM con diff kernels, logistic
+- Knn
+- Decision Trees
+   - XGBoost vs Catboost for the win
+   (tensorboard-catboost viewer)
+   - Extra trees/RF
+- NN
+    - Predefinidas tipo RESNET-50
+	- Reentrenar(free gpu/tpu gcloud)
+	- Transfer learning nah
+    - Propias
+	- Alto nivel
+	- Bajo nivel
+- Factorization machine
+
+
+ENSEMBLING, STACKING....
+------------------------------------
+- StackNet
+    - Propia?
+- Simples(avg...)
