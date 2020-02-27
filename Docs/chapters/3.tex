@@ -1,0 +1,49 @@
+\section{Datos}
+Los datos proporcionados contienen 55 variables, con 103230 observaciones para el entrenamiento del modelo y 5618 observaciones para la entrega de predicciones.
+\par
+\subsection{Origen de los datos}
+Estos datos se han obtenido al juntar los datos satelitales con los del catastro, suponemos que se han unido a través de las cordenadas X, Y.
+\subsection{Variables}
+\begin{itemize}
+\item Cordenadas
+\par
+Son X y Y, en los datos catastrales corresponden con los centroides de las parcelas\cite{catastro}
+\item Imagenes Satelitales
+\par
+Valores tomados de 4 bandas: rojo(4), verde(3), azul(2) y infrarroja(8). Todas con resolución espacial de 10m.
+\par
+Para cada banda se definen 10 valores
+\item Area
+\par
+Superficie en $m^{2}$ de la parcela
+\item Geom
+\par
+Vertices?
+\item Construction year
+\par
+Año de construcción de la parcela
+\item Max. Bulding Floor
+\par
+Número del último piso de la parcela
+\item Cadastral Quality ID
+\par
+Calidad de la construcción de la parcela. 
+Viene indicada por el último dígito de la tipología. 
+Toma valores de 1 a 9, yendo de mejor a peor. Excepcionalmente, puede aparecer como A, B y C para lo mejor que lo mejor\cite{catastro}
+
+
+
+\end{itemize}
+\subsection{Missing values}
+Hay 40 valores nulos en el train set y 14 valores nulos en el test set.
+En ambos casos la cantidad de observaciones con valores nulos es exactamente la mitad, 20 y 7 respectivamente.
+Esto es porque solo hay dos variables que contengan valores nulos y no existe ninguna observación en la que solo de dichas variables sea nula.
+\begin{itemize}
+    \item Max. Bulding Floor
+    \item Cadastral Quality ID
+\end{itemize}
+
+
+
+
+\subsection{Distribución test y train}
