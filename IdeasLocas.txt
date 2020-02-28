@@ -1,4 +1,4 @@
-29
+28
 
 
 EXTRA
@@ -7,7 +7,6 @@ EXTRA
 
 DOCUMENTACION
 --------------------------------
-
 - usar latex
 - meter referencias externas y a los notebooks
 - por supuesto meter algun meme en los notebooks
@@ -37,7 +36,7 @@ DOMAIN KNOWLEDGE
 DATA FORMAT
 -------------------------------
 - data leakages
-- ID CATASTROdatos 
+- ID CATASTRO datos 
 - como han partido train y test (tiempo, localizacion, %y)
 - esta y balanceado? y en test?
 - ver distribuciones de cada feature y ver la diff entre train y test
@@ -53,7 +52,7 @@ EDA
 ---------------------------------
 - tSNE
 - Covariance and correlations
-- PSA o SVM
+- PCA o SVM
 
 FEATURE ENGINEERING
 ----------------------------------
